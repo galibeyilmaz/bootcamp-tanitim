@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTCAMP</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+    .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+.card1{
+    min-height: 380px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card1-tittle{
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+.card1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0.0.15);
+}
+h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.card1 .btn{
+    margin-top: 20px;
+}
+.card1 .badge{
+    font-size: 0.9rem;
+    padding: 8px 12px;
+}
+nav{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+form{
+  padding-left: 20px;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">CodeBoost</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Ana Sayfa <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Eğitimler</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Yorumlar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kayıt Ol</a>
+      </li>
+    </ul>
+   <button type="button" class="btn btn-primary">hemen başla</button>
+  </div>
+</nav>
+<div class="container">
+    <div class="row align-items-stretch py-5">
+        <div class="col-md-6">
+<div class="jumbotron h-100 d-flex flex-column justify-content-center">
+  <h1 class="display-4">Yazılım Kariyerine Bootstrap ile Başla</h1>
+  <p class="lead">Modern, responsive ve profesyonel web arayüzleri geliştirmeyi pratik projelerle öğren.</p>
+  <hr class="my-4">
+  <a class="btn btn-primary btn-lg btn-block" href="#"> Eğitimleri gör</a> 
+  <a class="btn btn-outline-primary btn-lg btn-block" href="#"> Ücretsiz deneme</a> 
+  </div>
+  </div>
+  <div class="col-md-6">
+<div class="card h-100">
+  <img src="resim/academy.png" class="card-img-top img-fluid" alt="bootstrap">
+  <div class="card-body pb-0">
+    <p>Sektörün en çok kullanılan teknolojilerini öğren.</p>
+    <p>Kariyerine yön verecek teknolojiler</p>
+    <p>Sertifika kazan, kariyerine başla</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container mt-5">
+    <h2>Eğitim Kartları</h2>
+   
+        
+<div class="card-group">
+  <div class="card card1">
+    
+    <div class="card-body">
+      <h5 class="card-title card1-title">HTML & CSS Temelleri</h5>
+      <p class="card-text card1-text">Web Tasarımın temel yapılarını öğren.</p>
+      <span class="badge bg-success">Başlangıç</span>
+      <p class="mt-3 font-weight-bold">&#8378;299</p>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#htmlModal">Detay gör</button>
+    </div>
+  </div>
+  <div class="card card1">
+    
+    <div class="card-body">
+      <h5 class="card-tittle card1-title">Bootstrap ile Responsive Tasarım</h5>
+      <p class="card-text card1-text">Mobil uyumlu modern arayüzler oluşturur.</p>
+       <span class="badge bg-info">Orta</span>
+        <p class="mt-3 font-weight-bold">&#8378;399</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bootstrapModal">Detay gör</button>
+     
+    </div>
+  </div>
+  <div class="card card1">
+    
+    <div class="card-body">
+      <h5 class="card-title card1-title">JavaScript Başlangıç</h5>
+      <p class="card-text card1-text">Web sayfalarına etkileşim eklemeyi öğren.</p>
+       <span class="badge bg-warning">Başlangıç</span>
+        <p class="mt-3 font-weight-bold">&#8378;349</p>
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jsModal">Detay gör</button>
+     
+       </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="htmlModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="htmlModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="htmlModalLabel">HTML & CSS Temelleri</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Eğitim Süresi:</strong>4 Hafta</p>
+        <h6>İçerikler</h6>
+        <ul>
+            <li>HTML etiketleri</li>
+            <li>CSS temelleri</li>
+            <li>Bağlantılar ve resimler</li>
+            <li>flexbox</li>
+        </ul>
+      </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">kapat</button>
+        <button type="button" class="btn btn-primary">kayıt ol</button>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="modal fade" id="bootstrapModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="bootstrapModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bootstrapModalLabel">Bootstrap ile Responsive Tasarım</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Eğitim Süresi:</strong>6 Hafta</p>
+        <h6>İçerikler</h6>
+        <ul>
+            <li>Bootstrap Grid</li>
+            <li>Cards</li>
+            <li>Navbar</li>
+            <li>Responsive tasarım</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">kapat</button>
+        <button type="button" class="btn btn-primary">kayıt ol</button>
+      </div>
+       </div>
+        </div>
+         </div>
+
+
+      <div class="modal fade" id="jsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="jsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">JavaScript Başlangıç</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Eğitim Süresi:</strong>5 Hafta</p>
+        <h6>İçerikler</h6>
+        <ul>
+            <li>Variables</li>
+            <li>Conditions</li>
+            <li>Loops</li>
+            <li>functions</li>
+        </ul>
+      </div>
+ <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">kapat</button>
+        <button type="button" class="btn btn-primary">kayıt ol</button>
+      </div>
+       </div>
+        </div>
+         </div>
+     
+
+
+
+<div class="container mt-5">
+    <h2>Neden bizi seçmelisiniz?</h2>
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-12">
+        <h5>Uzman Eğitmenler</h5>
+        <p>Sektör deneyimli eğitmenlerle öğren.</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+        <h5>Uygulamalı Eğitim</h5>
+        <p>Gerçek projeler üzerinde çalış.</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+        <h5>Sertifika</h5>
+        <p>Eğitim sonunda sertifika kazan.</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+        <h5>7/24 Destek</h5>
+        <p>Her zaman yardım al.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <div class="text-center p-5 bg-secondary">
+        <h5>Ahmet Yılmaz</h5>
+        <p>"Bootstrap sayesinde responsive tasarımı kolayca öğrendim."</p>
+
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="text-center p-5  bg-secondary">
+        <h5>Mehmet Kaya</h5>
+        <p>"Projeler CV'me katkı sağladı."</p>
+</div>
+    </div>
+    <div class="carousel-item">
+     <div class="text-center p-5  bg-secondary">
+        <h5>Ayşe Demir</h5>
+        <p>"Eğitimler çok anlaşılır ve uygulamalıydı."</p>
+</div>
+    </div>
+  </div>
+ <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+ </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Bu eğitim kimler için uygun?
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Yazılım öğrenmek isteyen herkes için uygundur.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Bootstrap bilmeden başlayabilir miyim?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+       Evet. Eğitim temel HTML ve CSS bilgisi olan öğrenciler için hazırlanmıştır. Bootstrap konuları sıfırdan anlatılmaktadır.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Projeler CV'ye eklenebilir mi?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+       Evet. Eğitim boyunca geliştirilen projeler portföy ve CV'de kullanabilecek şekilde hazırlanmıştır.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Mobil uyumlu tasarım öğrenecek miyim?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+       Evet. Bootstrap Grid System ve responsive sınıflar kullanarak mobil, tablet ve masaüstü uyumlu tasarımlar oluşturmayı öğreneceksiniz.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">Ad</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Adınızı giriniz" required>
+      <div class="valid-feedback">
+        çok iyi
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Soyad </label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Soyadınızı giriniz." required>
+      <div class="valid-feedback">
+        çok iyi
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">E-posta</label>
+      <input type="email" class="form-control" id="validationCustom03" placeholder="ornek@mail.com" required>
+      <div class="invalid-feedback">
+       Lütfen geçerli bir e-posta giriniz.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Eğitim seçimi</label>
+      <select class="custom-select" id="validationCustom04" required>
+        <option selected disabled value="">Seçiniz</option>
+        <option>HTML & CSS Temelleri</option>
+        <option>Bootstrap ile Responsive Tasarım</option>
+        <option>JavaScript Başlangıç</option>
+      </select>
+      <div class="invalid-feedback">
+        Lütfen geçerli bir tane seçiniz.
+      </div>
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="Mesaj">Mesaj</label>
+        <textarea class="form-control" id="mesaj" rows="4"></textarea>
+
+    
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox"  id="kvkk" >
+      <label class="form-check-label" for="kvkk">
+       KVKK metnini okudum.
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Gönder</button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
